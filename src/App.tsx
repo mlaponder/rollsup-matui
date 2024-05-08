@@ -1,8 +1,12 @@
 import React from "react";
+import Button from "@mui/material/Button"
 
 function App() {
     return (
-        <h1>Rollup is amazing!</h1>
+        <div>
+            <h1>Rollup is amazing!</h1>
+            <Button>Cool</Button>
+        </div>
     );
 }
 
