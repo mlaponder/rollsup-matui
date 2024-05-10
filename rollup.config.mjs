@@ -17,7 +17,10 @@ export default {
             babelHelpers: 'bundled',
             presets: ['@babel/preset-react']
         }),
-        commonjs(),
+        commonjs({
+            requireReturnsDefault: "auto"
+        }
+        ),
         replace({
             preventAssignment: false,
             'process.env.NODE_ENV': '"development"'
